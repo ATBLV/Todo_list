@@ -1,0 +1,466 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('ttf'), ;
+  /* url('../fonts/Roboto/Roboto-Thin.ttf') format('ttf'); */
+  font-weight: 600;
+  font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  
+  margin-top: 0.4rem;
+}
+
+/* INPUT FIELD */
+/* label color */
+.input-field label {
+  color: #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+  color: #000;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+input[type=date] {
+  width: 1rem;
+  border-bottom: 0px;
+}
+
+input[type=date]:focus:not() {
+  border-bottom: 0px solid red;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* END INPUT FIELD */
+
+
+body {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+nav {
+  background-color: #d90429;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding-left: 2rem;
+}
+
+div>h4 {
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+button:focus {
+  background-color: transparent;
+}
+
+#reset{
+  min-width: 100px;
+  font-weight: 500px;
+}
+
+#reset:hover{
+  opacity: 1;
+  content: attr(data-hover);
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.2rem;
+  min-width: auto;
+}
+
+#reset:after{
+  content: "ToDo List";
+}
+
+#reset:hover:after{
+  content: 'RESET';
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr min-content;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar {
+  background-color: #edf2f4;
+  width: 20%;
+  min-width: 260px;
+  padding-left: 2rem;
+  min-height: 100vh;
+}
+
+.sidebar_button {
+  display: grid;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  color: #000;
+  width: 90%;
+  margin-bottom: 0.3rem;
+}
+
+.newproject_button {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  color: #000;
+  width: 90%;
+  margin-bottom: 0.3rem;
+}
+
+.newproject_button button {
+  border-color: transparent;
+  color: #000;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.newproject_button button span {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 12;
+  margin-top: 0.15rem;
+  color: white;
+}
+
+.newproject_button button:hover {
+
+  background-color: #8d99ae;
+  color: #ef233c;
+}
+
+.newproject_button span:hover {
+  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 60;
+}
+
+.newproject_button span {}
+
+.btn:hover {
+  background-color: #2b2d42;
+  color: white;
+  font-weight: bold;
+}
+
+.btn:focus {
+  background-color: #000;
+  font-weight: bold;
+}
+
+#new_project {
+  display: grid;
+  grid-template-areas:
+    'projectname projectname'
+    'buttonleft buttonright';
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+#project_button:hover {
+  background-color: #fcbf49;
+}
+
+#input_project:focus::placeholder {
+  color: transparent;
+}
+
+#project_button {
+  background-color: #ef233c;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+}
+
+
+#project_button span {
+  padding-right: 0.3rem;
+}
+
+.projectname {
+  grid-area: projectname;
+}
+
+.buttonleft {
+  grid-area: buttonleft;
+}
+
+.buttonright {
+  grid-area: buttonright;
+}
+
+.selectbutton {
+  grid-area: selectbutton;
+}
+
+
+#new_project a:active {
+  background-color: tomato;
+}
+
+#add_task {
+  width: 50%;
+}
+
+#task_box {
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 7%) 0px 1px 1px, rgb(0 0 0 / 7%) 0px 2px 2px, rgb(0 0 0 / 7%) 0px 4px 4px, rgb(0 0 0 / 7%) 0px 8px 8px, rgb(0 0 0 / 7%) 0px 16px 16px;
+  height: 6rem;
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+#task_box p:focus-visible {
+  outline: none;
+  background-color: tomato;
+}
+
+#task_container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+#task_container div {
+  align-items: center;
+}
+
+
+.listed_task {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-bottom: 0.3rem;
+  padding-left: 1.5rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.open_task {
+  display: block;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  height: 11.5rem;
+  border: 1px solid rgb(212, 127, 127);
+}
+
+.open_contents {
+  transition-duration: 0.5s;
+  max-width: 100%;
+  max-height: inherit;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fdsseq {
+  100% {
+    opacity: 1;
+  }
+}
+
+textarea {
+  border: transparent;
+  margin-right: 2%;
+  font-size: 1rem;
+  border: 0 none;
+  max-width: 95%;
+  max-height: 100%;
+  height: 5rem;
+  resize: none;
+  width: 50rem;
+}
+
+textarea:focus-visible {
+  border: 0 none;
+  outline: grey;
+}
+
+.open_task:focus-visible {
+  background-color: tomato;
+}
+
+#title {
+  display: flex;
+  justify-content: space-around;
+}
+
+#three_dots span {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 40
+}
+
+.three_dots {
+  height: 2rem;
+}
+
+.task_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.task_components {
+}
+
+.date_input {
+  border-bottom: 0px;
+}
+
+.date_input>input[type=date] {
+  border-bottom: 0px transparent;
+  border: none;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.date_input>input[type=date]:focus {
+  border-bottom: 0px transparent;
+  border: none;
+  margin-bottom: 0;
+}
+
+.date_input>input[type=date]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 0px transparent;
+  border: none;
+  box-shadow: none;
+}
+
+input[type=date]:not(.browser-default) {
+  border-bottom: 0px transparent;
+  border: none;
+  box-shadow: none;
+
+}
+
+input[type=date]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 0px transparent;
+  border: none;
+  box-shadow: none;
+
+}
+
+.components {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.task_header:focus-visible {
+  outline: transparent;
+}
+
+.icon {
+  background-color: transparent;
+  border-color: transparent;
+  width: 50px;
+  font-size: 10px;
+}
+
+.icons {
+  justify-content: center;
+}
+
+.delete_button {
+  justify-content: center;
+}
+
+.delete_button:hover {
+  filter: invert(15%) sepia(86%) saturate(5474%) hue-rotate(343deg) brightness(83%) contrast(106%);
+}
+
+.delete_button:active {
+  background-color: transparent;
+}
+
+.delete_button:focus {
+  background-color: transparent;
+}
+
+.edit_button>img {
+  padding-bottom: 2px;
+}
+.edit_button:hover {
+  filter: invert(61%) sepia(24%) saturate(260%) hue-rotate(180deg) brightness(95%) contrast(88%);
+}
+
+.edit_button:focus {
+  background-color: transparent;
+
+}
+
+.save_button {
+  width: 2rem;
+}
+
+.not_saved_button {
+  width: 1.8rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<script defer src="bundle.js?91f60927f2c8f468f194"></script></head>
+
+<body>
+    <div>
+        <nav>
+            <div class="nav_title">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style=" display: flex; align-items: center;">
+                        <h4><a onclick="deleteLocalStorage()" href="" id="reset"></a></h4>
+                        <a style="display: flex; align-items: center;" target="_blank"
+                            href="https://github.com/ATBLV/Todo_list">
+                            <img style="width: auto; height: 2.4rem; padding-left: 0.7rem;"
+                                src="../src/img/github-mark-white.svg">
+                        </a>
+                    </div>
+                    <div style="font-size: 0.7rem; padding-right: 2rem;">
+                        <a> <span>Created by ATBLV for The Odin Project</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <div id="sidebar" class="sidebar">
+                <h5>Tasks</h5>
+                <ul>
+                    <li><a id="tasks" class="btn sidebar_button">
+                            To Do
+                        </a> </li>
+                    <li>
+                        <a id="today" class="btn sidebar_button">
+                            Today
+                        </a>
+                    </li>
+                    <li>
+                        <a id="thisWeek" class="btn sidebar_button">
+                            This week
+                        </a>
+                    </li>
+                    <li></li>
+                </ul>
+                <div id="add_project">
+                    <div><a class="btn sidebar_button" style="display: flex;" id="project_button"><span
+                                class="material-symbols-outlined">add_circle</span>New Project</a></div>
+                    <div id="new_project">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div id="title">
+                    <h2></h2>
+                    <button id="three_dots" class="icon right-align dropdown-trigger" type="button">
+                        <span class="material-symbols-outlined" style="font-size: 3rem; font-weight: bold;">
+                            more_vert
+                        </span>
+                    </button>
+                </div>
+
+                <div id="container">
+                    <input type="text" class="input-field" placeholder="Add task" id="add_task">
+                    <div id="task_container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='./index.js'></script>
+    <script>
+
+        function deleteLocalStorage() {
+            window.localStorage.clear();
+            location.reload();
+        }
+
+    </script>
+</body>
+
+</html>
