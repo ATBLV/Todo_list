@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/ATBLV/Todo_list/issues"
   },
-  "homepage": "https://github.com/ATBLV/Todo_list#readme",
+  "homepage": "https://atblv.github.io/Todo_list/",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
