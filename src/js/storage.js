@@ -161,7 +161,7 @@ function writeToDOM(data, project) {
     div.innerHTML =
 
         ' <div id="' + dataID + '" class="task_header"><div class="task_title"  >' + data.title + '</div>'
-        + '<div class="task_components"><div class="date_input"></div><div class="icons"><button class="icon right-align edit_button" type="button"><img style="width: 1.2rem;" src="../src/img/edit.png"></button><button class="icon right-align delete_button" type="button"><img src="../src/img/delete_black_24dp.svg"></button></div></div></div>';
+        + '<div class="task_components"><div class="date_input"></div><div class="icons"><button class="icon right-align edit_button" type="button"><img style="width: 1.2rem;" src="./img/edit.png"></button><button class="icon right-align delete_button" type="button"><img src="./img/delete_black_24dp.svg"></button></div></div></div>';
 
     taskContainer.appendChild(div);
 }

@@ -109,7 +109,7 @@ export const toDoMethods = (function () {
         div.setAttribute('id', 'open_contents');
 
         div.innerHTML =
-            '<div id="text_area"><textarea class="" placeholder="Description"></textarea></div><div class="components"><div><button class="icon right-align " id="save_button" type="button"><img class="save_button" style="" src="../src/img/checkmark.png"></button><button id="not_saved" class="icon right-align not_saved_button" type="button"><img class="not_saved_button" style ="" src="../src/img/delete-button.png"></button></div><div><input id="date_input" type="date" value="" /></div></div>';
+            '<div id="text_area"><textarea class="" placeholder="Description"></textarea></div><div class="components"><div><button class="icon right-align " id="save_button" type="button"><img class="save_button" style="" src=".img/checkmark.png"></button><button id="not_saved" class="icon right-align not_saved_button" type="button"><img class="not_saved_button" style ="" src="./img/delete-button.png"></button></div><div><input id="date_input" type="date" value="" /></div></div>';
 
         task.appendChild(div);
     }
